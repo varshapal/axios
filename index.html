@@ -88,6 +88,15 @@
                 const childNodeDeleted = document.getElementById(userId);
                 parentNode.removeChild(childNodeDeleted)
             }
+
+            function editUserDetail(emailid,name,phonenumber,userId)
+            {
+                document.getElementById('name').value=name; 
+                document.getElementById('email').value=emailid;
+                document.getElementById('phone').value=phonenumber;
+
+                deleteUser(userId);
+            }
             //localStorage.setItem(obj.email, JSON.stringify(obj));
 
 
